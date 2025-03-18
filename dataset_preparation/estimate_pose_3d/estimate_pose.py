@@ -19,6 +19,9 @@ from torchvision.models.detection import (
 )
 from tqdm import tqdm
 
+import sys
+sys.path.append("/root/ws/src/Tennis-Sport-AI/dataset_preparation/estimate_pose_3d/HybrIK")
+
 from hybrik.models import builder
 from hybrik.utils.config import update_config
 from hybrik.utils.presets import SimpleTransform3DSMPLCam
